@@ -1,5 +1,4 @@
 #include "NASModules.hpp"
-#include "VAStateVariableFilter.h"
 
 Plugin *plugin;
 

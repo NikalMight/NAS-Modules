@@ -2,7 +2,7 @@
 #include <iostream>
 #include <cmath>
 #include <random>
-#include "VAStateVariableFilter.h"
+#include "Dsp.h"
 
 struct Eq: Module
 {
@@ -41,13 +41,18 @@ struct Eq: Module
         NUM_OUTPUTS
     };
 
-    VAStateVariableFilter *hpFilter = new VAStateVariableFilter();
-    VAStateVariableFilter *loShelfFilter = new VAStateVariableFilter();
-    VAStateVariableFilter *loMidFilter = new VAStateVariableFilter();
-    VAStateVariableFilter *hiMidFilter = new VAStateVariableFilter();
-    VAStateVariableFilter *hiShelfFilter = new VAStateVariableFilter();
-    VAStateVariableFilter *lpFilter = new VAStateVariableFilter();
+    //Filter declarations
 
     EQ(): Module(NUM_PARAMS, NUM_INPUTS, NUM_OUTPUTS){}
     void step() override;
+
+    void EQ::step()
+    {
+        //do stuff
+    }
+
+    EQWidget::EQWidget()
+    {
+        //do widget stuff
+    }
 }
