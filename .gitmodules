@@ -1,3 +1,6 @@
 [submodule "RJModules"]
 	path = RJModules
 	url = https://github.com/Miserlou/RJModules
+[submodule "DSPFilters"]
+	path = DSPFilters
+	url = https://github.com/vinniefalco/DSPFilters
